@@ -1,0 +1,2 @@
+# Keep supplementary files private: anything under /_extras/ shows the 404 page.
+/_extras/*   /404.html   404!

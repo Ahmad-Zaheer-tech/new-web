@@ -1,0 +1,129 @@
+/* ==========================================================================
+   cv.css — the CV as a document.
+   On screen it is a white A4 sheet on the site background; in print (and in
+   the generated PDFs) it is the same markup, laid out by @page.
+   Single column, real text, semantic headings: readable by people and by
+   applicant-tracking systems. Logical properties => Dari (RTL) mirrors free.
+   ========================================================================== */
+
+.cv-toolbar{
+  max-width: 210mm; margin: 0 auto 1.2rem;
+  display: flex; justify-content: space-between; align-items: center; gap: .8rem; flex-wrap: wrap;
+}
+.cv-toolbar p{ font-size: .9rem; max-width: none; }
+.cv-toolbar__actions{ display: flex; gap: .6rem; flex-wrap: wrap; }
+
+.cv-sheet{
+  --cv-ink: #15211B;
+  --cv-dim: #46554C;
+  --cv-faint: #6B7A71;
+  --cv-accent: #1B7A37;
+  --cv-line: #D3DBD5;
+  --cv-tint: #EEF4F0;
+  background: #FFFFFF;
+  color: var(--cv-ink);
+  width: 210mm; max-width: 100%;
+  margin: 0 auto;
+  padding: 15mm 16mm 16mm;
+  box-shadow: 0 24px 70px rgba(0,0,0,.4);
+  font-family: var(--f-body);
+  font-size: 10pt;
+  line-height: 1.5;
+  text-align: start;
+}
+.cv-sheet *{ color: inherit; }
+.cv-sheet p{ color: var(--cv-dim); max-width: none; font-size: inherit; }
+.cv-sheet a{ color: inherit; border-bottom: 1px solid var(--cv-line); }
+.cv-sheet a:hover{ border-color: var(--cv-accent); }
+.cv-sheet h1, .cv-sheet h2, .cv-sheet h3, .cv-sheet h4{ color: var(--cv-ink); letter-spacing: 0; }
+
+/* -- header -- */
+.cv-head{
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8mm; align-items: end;
+  padding-bottom: 5mm; border-bottom: 2.5px solid var(--cv-accent);
+}
+.cv-head h1{ font-size: 25pt; line-height: 1.05; font-weight: 700; }
+.cv-head__title{ margin-top: 2.2mm; font-family: var(--f-display); font-weight: 600; font-size: 11.5pt; color: var(--cv-accent) !important; line-height: 1.35; }
+.cv-contact{ display: grid; gap: .9mm; font-size: 8.8pt; color: var(--cv-dim); justify-items: start; }
+.cv-contact li{ display: flex; gap: 2mm; align-items: baseline; }
+.cv-contact b{ font-weight: 600; color: var(--cv-faint); min-width: 13mm; font-size: 8pt; }
+.cv-contact .ltr{ direction: ltr; unicode-bidi: isolate; }
+
+/* -- sections -- */
+.cv-sec{ margin-top: 5.5mm; }
+.cv-sec > h2{
+  font-family: var(--f-display); font-size: 10.5pt; font-weight: 700; color: var(--cv-accent);
+  padding-bottom: 1.4mm; margin-bottom: 2.6mm; border-bottom: 1px solid var(--cv-line);
+  text-transform: uppercase; letter-spacing: .07em;
+}
+html[lang="fa"] .cv-sec > h2{ text-transform: none; letter-spacing: 0; font-size: 11.5pt; }
+.cv-summary{ font-size: 10pt; line-height: 1.6; }
+
+.cv-comp{ display: grid; grid-template-columns: 1fr 1fr; gap: 1.2mm 8mm; }
+.cv-comp li{ position: relative; padding-inline-start: 4mm; color: var(--cv-dim); }
+.cv-comp li::before{ content: ''; position: absolute; inset-inline-start: 0; top: .55em; width: 1.6mm; height: 1.6mm; background: var(--cv-accent); border-radius: 1px; }
+
+.cv-group + .cv-group{ margin-top: 3mm; }
+.cv-group > h3{ font-size: 8.6pt; font-weight: 700; color: var(--cv-faint) !important; margin-bottom: 1.6mm; text-transform: uppercase; letter-spacing: .06em; }
+html[lang="fa"] .cv-group > h3{ text-transform: none; letter-spacing: 0; font-size: 9.5pt; }
+
+.cv-entry{ break-inside: avoid; page-break-inside: avoid; }
+.cv-entry + .cv-entry{ margin-top: 2.8mm; }
+.cv-entry__head{ display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+.cv-entry h4{ font-size: 10.3pt; font-weight: 700; line-height: 1.3; }
+.cv-entry__org{ font-weight: 600; color: var(--cv-accent) !important; }
+.cv-entry__when{ font-family: var(--f-mono); font-size: 8.4pt; color: var(--cv-faint) !important; white-space: nowrap; }
+html[lang="fa"] .cv-entry__when{ font-family: var(--f-fa); font-size: 8.8pt; }
+.cv-entry p{ margin-top: .8mm; font-size: 9.6pt; }
+.cv-entry__tags{ margin-top: 1mm; font-size: 8.6pt; color: var(--cv-faint) !important; }
+
+.cv-skills{ display: grid; grid-template-columns: 36mm minmax(0, 1fr); gap: 1.7mm 5mm; font-size: 9.6pt; }
+.cv-skills dt{ font-weight: 700; color: var(--cv-ink); }
+.cv-skills dd{ margin: 0; color: var(--cv-dim); }
+
+.cv-projects li{ break-inside: avoid; }
+.cv-projects li + li{ margin-top: 2mm; }
+.cv-projects b{ font-weight: 700; }
+.cv-projects .ltr{ font-family: var(--f-mono); font-size: 8.6pt; color: var(--cv-accent); }
+.cv-projects p{ margin-top: .3mm; font-size: 9.4pt; }
+
+.cv-two{ display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; }
+.cv-langs li{ display: flex; justify-content: space-between; gap: 4mm; }
+.cv-langs li + li{ margin-top: 1mm; }
+.cv-langs span:last-child{ color: var(--cv-faint); }
+.cv-edu li + li{ margin-top: 1.6mm; }
+.cv-edu strong{ font-weight: 700; display: block; line-height: 1.3; }
+.cv-edu span{ color: var(--cv-dim); font-size: 9.4pt; }
+
+@media (max-width: 760px){
+  .cv-sheet{ padding: 1.4rem 1.2rem; font-size: 10.5pt; }
+  .cv-head{ grid-template-columns: 1fr; }
+  .cv-comp, .cv-two{ grid-template-columns: 1fr; }
+  .cv-skills{ grid-template-columns: 1fr; gap: .1rem; }
+  .cv-skills dd{ margin-bottom: .7rem; }
+  .cv-entry__head{ flex-direction: column; gap: .1rem; }
+}
+
+/* -- print / PDF -- */
+@page{ size: A4; margin: 13mm 15mm; }
+@media print{
+  .site-header, .mobile-menu, .site-footer, .scroll-progress, .whatsapp-fab, .consent-banner,
+  .ask-ahmad-fab, .ask-ahmad-panel, .cv-toolbar, .skip-link, .cursor-dot{ display: none !important; }
+  html, body{ background: #FFFFFF !important; }
+  main{ padding: 0 !important; }
+  .cv-page{ padding: 0 !important; }
+  .cv-page .wrap{ padding: 0 !important; max-width: none !important; }
+  .cv-sheet{ box-shadow: none; width: auto; margin: 0; padding: 0; }
+  a{ border-bottom: 0 !important; }
+}
+
+/* education: two-column grid with even row gaps */
+.cv-edu.cv-two{ gap: 2.6mm 8mm; }
+.cv-edu.cv-two li + li{ margin-top: 0; }
+@media (max-width: 760px){ .cv-edu.cv-two{ gap: 1rem; } }
+
+/* keep short blocks together; never strand a heading */
+html[lang="fa"] .cv-sheet p{ max-width: none; }
+.cv-sec > h2{ break-after: avoid; page-break-after: avoid; }
+.cv-edu, .cv-skills, .cv-projects, .cv-comp, .cv-langs{ break-inside: avoid; page-break-inside: avoid; }
+.cv-sec:has(.cv-edu), .cv-sec:has(.cv-skills), .cv-sec:has(.cv-projects), .cv-sec:has(.cv-langs){ break-inside: avoid; page-break-inside: avoid; }

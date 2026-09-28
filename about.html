@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+  // Applied before CSS paints, so there's no flash of the wrong theme.
+  (function(){
+    try {
+      var t = localStorage.getItem('az-theme');
+      if(!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      if(t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    } catch(e){}
+  })();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-uvR24iH+WXEbusJgr8aXQsSCjF5JM/0dS/+cfXytYig=' https://www.googletagmanager.com; style-src 'self'; font-src 'self'; img-src 'self' data: https://www.google.com https://maps.gstatic.com; connect-src 'self' https://formspree.io https://www.google-analytics.com https://region1.google-analytics.com; frame-src https://www.google.com; base-uri 'self'; form-action 'self' https://formspree.io;">
+<title>About Ahmad Zaheer — Profile, Experience &amp; Education</title>
+<meta name="description" content="Professional profile of Ahmad Zaheer: computer science graduate, database manager at Payam University, freelance web developer, and English &amp; computer instructor in Kabul.">
+<meta name="theme-color" content="#0B1210">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ahmadzaheer.dev/about.html">
+<meta property="og:title" content="About Ahmad Zaheer — Profile, Experience &amp; Education">
+<meta property="og:description" content="Professional profile of Ahmad Zaheer: computer science graduate, database manager at Payam University, freelance web developer, and English &amp; computer instructor in Kabul.">
+<meta property="og:image" content="https://ahmadzaheer.dev/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Ahmad Zaheer — Profile, Experience &amp; Education">
+<meta name="twitter:description" content="Professional profile of Ahmad Zaheer: computer science graduate, database manager at Payam University, freelance web developer, and English &amp; computer instructor in Kabul.">
+<meta name="twitter:image" content="https://ahmadzaheer.dev/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="canonical" href="https://ahmadzaheer.dev/about.html">
+<link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/about.html">
+<link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/about.html">
+<link rel="alternate" hreflang="x-default" href="https://ahmadzaheer.dev/about.html">
+<link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/tech-brands.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahmad Zaheer",
+  "alternateName": "احمد ظهیر",
+  "url": "https://ahmadzaheer.dev/",
+  "image": "https://ahmadzaheer.dev/assets/og-image.jpg",
+  "jobTitle": "Computer & Technology Specialist",
+  "description": "Web developer, database manager, and IT & English instructor based in Kabul, Afghanistan.",
+  "email": "mailto:ansarwaqef7@gmail.com",
+  "telephone": "+93773484541",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Khairkhana, near Argentina Hotel",
+    "addressLocality": "Kabul",
+    "addressCountry": "AF"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Afghanistan Institute of Technology (AIT)"
+  },
+  "knowsLanguage": [
+    "fa",
+    "en"
+  ],
+  "knowsAbout": [
+    "Web development",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Tailwind CSS",
+    "PHP",
+    "SQL",
+    "SQL Server",
+    "Oracle Database",
+    "Database administration",
+    "AI-assisted development",
+    "Generative AI",
+    "AI agents and automation",
+    "IT education",
+    "English language teaching"
+  ],
+  "sameAs": [
+    "https://zaheer-tech.netlify.app",
+    "https://online-exam-tech.netlify.app",
+    "https://gaming-tech1.netlify.app"
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress"></div>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/brand-mark.png" alt="" aria-hidden="true">
+      <span>Ahmad Zaheer<small>Computer &amp; Technology Specialist</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary"><a href="index.html">Home</a><a href="about.html" aria-current="page">About</a><a href="skills.html">Skills</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="certifications.html">Certificates</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-cta">
+      <a class="btn btn--primary btn--small" href="resume.html">View CV</a>
+      <a class="lang-toggle" href="fa/about.html" hreflang="fa" lang="fa">دری</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch between light and dark theme" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav-toggle-lines"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav id="mobile-menu" class="mobile-menu" aria-label="Mobile">
+  <ul class="mm-list"><li><a class="mm-link mm-i-index" href="index.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg></span><span class="mm-label">Home</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-about" href="about.html" aria-current="page"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></svg></span><span class="mm-label">About</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-skills" href="skills.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /> <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /> <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /></svg></span><span class="mm-label">Skills</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-services" href="services.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></svg></span><span class="mm-label">Services</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-projects" href="projects.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" /> <path d="M8 10v4" /> <path d="M12 10v2" /> <path d="M16 10v6" /></svg></span><span class="mm-label">Projects</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-certifications" href="certifications.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /> <circle cx="12" cy="8" r="6" /></svg></span><span class="mm-label">Certificates</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-contact" href="contact.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></svg></span><span class="mm-label">Contact</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li></ul>
+  <a class="btn btn--primary btn--block mm-cta" href="resume.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg>View CV</a>
+  <div class="mm-quick">
+    <a class="mm-q mm-q--phone" href="tel:0773484541"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg><span>Call</span></a>
+    <a class="mm-q mm-q--wa" href="https://wa.me/93773484541" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg><span>WhatsApp</span></a>
+    <a class="mm-q mm-q--mail" href="mailto:ansarwaqef7@gmail.com"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span>Email</span></a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="section hero-offset">
+    <div class="wrap">
+      <div class="grid cols-2 items-center">
+        <div class="reveal">
+          <div class="label">Professional profile</div>
+          <h1 class="title-lg">A computer science graduate who builds systems — and teaches people to use them.</h1>
+          <p class="lede mt-2">Computer &amp; technology specialist based in Kabul: web development, database administration, and IT &amp; English education — delivered in English and Dari.</p>
+          <div class="flex-actions flex-actions--mt">
+            <a class="btn btn--primary" href="resume.html">View CV</a>
+            <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="hero-visual max-w-sm mx-auto">
+            <div class="chip-frame static-visible"><img src="assets/ahmad-zaheer-640.jpg" alt="Portrait of Ahmad Zaheer" width="640" height="640"></div>
+            <div class="chip-pins" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--raised" id="profile">
+    <div class="wrap profile-grid">
+      <div class="reveal">
+        <h2>Summary</h2>
+        <div class="stack mt-2">
+          <p>I hold a computer science diploma from the Afghanistan Institute of Technology (AIT) and work at the point where data, software, and teaching meet. I administered the PHEMIS database system at Payam University for a year, and I have taught English and computer courses at five institutions: Abraj, Ganja and Amozesh Educational Centers, Badr Academy, and Andisha-e-Noor Academy.</p>
+          <p>As a developer I build with HTML, CSS, JavaScript, Tailwind CSS, and PHP, and I work with SQL, SQL Server, and Oracle. I created and published two platforms of my own: Ahmad Zaheer Academy, a free programming academy with 11 courses and 450+ lessons, and Examina, an online and offline exam platform.</p>
+          <p>I also use AI tools, generative AI, and AI agents to speed up building software, producing media, and handling office work.</p>
+        </div>
+      </div>
+      <aside class="facts reveal" aria-label="Key facts">
+        <dl>
+          <div><dt>Title</dt><dd>Computer &amp; Technology Specialist</dd></div>
+          <div><dt>Based in</dt><dd>Khairkhana, Kabul, Afghanistan</dd></div>
+          <div><dt>Education</dt><dd>Computer science diploma, AIT</dd></div>
+          <div><dt>Languages</dt><dd>Dari / Persian, English</dd></div>
+          <div><dt>Live sites</dt><dd><a class="ltr" href="https://zaheer-tech.netlify.app" target="_blank" rel="noopener noreferrer">zaheer-tech.netlify.app</a><br><a class="ltr" href="https://online-exam-tech.netlify.app" target="_blank" rel="noopener noreferrer">online-exam-tech.netlify.app</a><br><a class="ltr" href="https://gaming-tech1.netlify.app" target="_blank" rel="noopener noreferrer">gaming-tech1.netlify.app</a><br></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal">
+        <h2>Experience</h2>
+        <p>Six roles, grouped by kind of work. Durations are shown only where I have them.</p>
+      </div>
+      
+      <div class="xp-group">
+        <h3 class="xp-group__title"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3" /> <path d="M3 5V19A9 3 0 0 0 21 19V5" /> <path d="M3 12A9 3 0 0 0 21 12" /></svg>Technology &amp; data</h3>
+        <ol class="xp">
+        <li class="xp-item reveal">
+          <div class="xp-item__head"><h4>Database Manager</h4><span class="xp-item__org">Payam University</span><span class="chip">1 year</span></div>
+          <p>Administered and maintained the university&#x27;s PHEMIS database system.</p>
+          <div class="project-tags"><span class="tag">PHEMIS</span><span class="tag">Database administration</span></div>
+        </li>
+        <li class="xp-item reveal">
+          <div class="xp-item__head"><h4>Freelance Web &amp; Database Developer</h4><span class="xp-item__org">Independent</span></div>
+          <p>Web and database projects for individuals and organizations, online and offline — including my own live platforms below.</p>
+          <p>Selected work: <a href="https://zaheer-tech.netlify.app" target="_blank" rel="noopener noreferrer">Ahmad Zaheer Academy</a> · <a href="https://online-exam-tech.netlify.app" target="_blank" rel="noopener noreferrer">Examina</a> · <a href="https://gaming-tech1.netlify.app" target="_blank" rel="noopener noreferrer">PULSAR — Gaming Tech</a></p>
+        </li></ol>
+      </div>
+      <div class="xp-group">
+        <h3 class="xp-group__title"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>Teaching &amp; training</h3>
+        <ol class="xp">
+        <li class="xp-item reveal">
+          <div class="xp-item__head"><h4>English Teacher &amp; Image Editor</h4><span class="xp-item__org">Abraj</span><span class="chip">6 months</span></div>
+          <p>Taught English and handled image-editing work for the organization.</p>
+          
+        </li>
+        <li class="xp-item reveal">
+          <div class="xp-item__head"><h4>English &amp; Computer Teacher</h4><span class="xp-item__org">Ganja &amp; Amozesh Educational Centers</span></div>
+          <p>Taught English language and computer courses at two educational centers.</p>
+          
+        </li>
+        <li class="xp-item reveal">
+          <div class="xp-item__head"><h4>English Instructor</h4><span class="xp-item__org">Badr Academy</span></div>
+          <p>Taught English as a language instructor.</p>
+          
+        </li>
+        <li class="xp-item reveal">
+          <div class="xp-item__head"><h4>Computer Instructor</h4><span class="xp-item__org">Andisha-e-Noor Academy</span></div>
+          <p>Taught computer courses as an instructor.</p>
+          
+        </li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--raised" id="teaching">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal">
+        <h2>What I teach</h2>
+        <p>The subjects covered by my free online academy, from a first computer to web development and databases — plus English.</p>
+      </div>
+      <div class="tile-grid tile-grid--compact reveal"><div class="tech-tile tc-basics"><span class="tech-tile__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2" /> <line x1="8" x2="16" y1="21" y2="21" /> <line x1="12" x2="12" y1="17" y2="21" /></svg></span><span class="tech-tile__text"><span class="tech-tile__name">Computer basics</span></span></div><a class="tech-tile tc-windows11" href="https://www.microsoft.com/windows/windows-11" target="_blank" rel="noopener noreferrer" aria-label="Windows 11 — official site (opens in a new tab)"><span class="tech-tile__icon"><img src="assets/tech/windows11.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">Windows 11</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-html5" href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer" aria-label="HTML5 — official site (opens in a new tab)"><span class="tech-tile__icon"><img src="assets/tech/html5.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">HTML5</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-css3" href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer" aria-label="CSS3 — official site (opens in a new tab)"><span class="tech-tile__icon"><img src="assets/tech/css3.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">CSS3</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-javascript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" aria-label="JavaScript — official site (opens in a new tab)"><span class="tech-tile__icon"><img src="assets/tech/javascript.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">JavaScript</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-php" href="https://www.php.net" target="_blank" rel="noopener noreferrer" aria-label="PHP — official site (opens in a new tab)"><span class="tech-tile__icon tech-tile__icon--plate"><img src="assets/tech/php.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">PHP</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-cpp" href="https://isocpp.org" target="_blank" rel="noopener noreferrer" aria-label="C++ — official site (opens in a new tab)"><span class="tech-tile__icon tech-tile__icon--plate"><img src="assets/tech/cplusplus.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">C++</span><span class="tech-tile__note">fundamentals</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-mysql" href="https://www.mysql.com" target="_blank" rel="noopener noreferrer" aria-label="MySQL — official site (opens in a new tab)"><span class="tech-tile__icon tech-tile__icon--plate"><img src="assets/tech/mysql.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">MySQL</span><span class="tech-tile__note">taught in my academy</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><div class="tech-tile tc-ai-tools"><span class="tech-tile__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /></svg></span><span class="tech-tile__text"><span class="tech-tile__name">AI tools</span></span></div><div class="tech-tile tc-english"><span class="tech-tile__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6" /> <path d="m4 14 6-6 2-3" /> <path d="M2 5h12" /> <path d="M7 2h1" /> <path d="m22 22-5-10-5 10" /> <path d="M14 18h6" /></svg></span><span class="tech-tile__text"><span class="tech-tile__name">English language</span><span class="tech-tile__note">IPA &amp; CEFR-based course</span></span></div></div>
+      <p class="mt-2 reveal"><a class="link-arrow" href="projects/zaheer-academy.html">About the academy<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></p>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal">
+        <h2>Education</h2>
+        <p>A computer science diploma from AIT, supported by computer and English certificates.</p>
+      </div>
+      <div class="cred-grid reveal-group">
+        <article class="cred cred--cs reveal">
+          <span class="cred__mark"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20v2" /> <path d="M12 2v2" /> <path d="M17 20v2" /> <path d="M17 2v2" /> <path d="M2 12h2" /> <path d="M2 17h2" /> <path d="M2 7h2" /> <path d="M20 12h2" /> <path d="M20 17h2" /> <path d="M20 7h2" /> <path d="M7 20v2" /> <path d="M7 2v2" /> <rect x="4" y="4" width="16" height="16" rx="2" /> <rect x="8" y="8" width="8" height="8" rx="1" /></svg></span>
+          <div><h3>Computer Science Diploma &amp; Transcript</h3><span class="cred__org"><bdi>AIT — Afghanistan Institute of Technology</bdi></span>
+          <span class="chip">Diploma &amp; transcript</span></div>
+        </article>
+        
+        <article class="cred cred--en reveal">
+          <span class="cred__mark"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6" /> <path d="m4 14 6-6 2-3" /> <path d="M2 5h12" /> <path d="M7 2h1" /> <path d="m22 22-5-10-5 10" /> <path d="M14 18h6" /></svg></span>
+          <div><h3>English Diploma &amp; Certificate</h3><span class="cred__org"><bdi>TECOL</bdi></span>
+          <span class="chip">Diploma &amp; certificate</span></div>
+        </article>
+        
+        <article class="cred cred--gen reveal">
+          <span class="cred__mark"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 21v-3a2 2 0 0 0-4 0v3" /> <path d="M18 4.933V21" /> <path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6" /> <path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11" /> <path d="M6 4.933V21" /> <circle cx="12" cy="9" r="2" /></svg></span>
+          <div><h3>School Graduation Diploma</h3><span class="cred__org"><bdi>High school graduation</bdi></span>
+          <span class="chip">Diploma</span></div>
+        </article></div>
+      <p class="mt-2 reveal"><a class="link-arrow" href="certifications.html">See all certificates<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></p>
+    </div>
+  </section>
+
+  <section class="section section--raised" id="languages">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal"><h2>Languages</h2></div>
+      <div class="lang-rows reveal-group">
+        <div class="lang-row reveal"><span class="chip">Native</span><h3>Dari / Persian</h3>
+          <p>Daily working language: teaching, documentation, and right-to-left web design.</p></div>
+        <div class="lang-row reveal"><span class="chip">Professional</span><h3>English</h3>
+          <p>Taught as an instructor; TECOL diploma and further English certificates.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how-i-work">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal"><h2>How I work</h2></div>
+      <div class="steps steps--plain reveal-group"><article class="step reveal"><span class="pillar__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /></svg></span><h3>Clarity beats cleverness</h3><p>A good lesson and a good interface share one rule: the person on the other side should never have to guess.</p></article><article class="step reveal"><span class="pillar__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4" /> <path d="m6 8-4 4 4 4" /> <path d="m14.5 4-5 16" /></svg></span><h3>Plain tools, lasting pages</h3><p>My live sites are built with plain HTML, CSS, and JavaScript — no framework to maintain, and nothing that breaks when a dependency changes.</p></article><article class="step reveal"><span class="pillar__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6" /> <path d="m4 14 6-6 2-3" /> <path d="M2 5h12" /> <path d="M7 2h1" /> <path d="m22 22-5-10-5 10" /> <path d="M14 18h6" /></svg></span><h3>Two languages, one standard</h3><p>I write and teach in Dari and English, and I build right-to-left layouts natively instead of flipping an English template.</p></article></div>
+    </div>
+  </section>
+
+  <section class="cta-band section--tight">
+    <div class="wrap cta-band-inner">
+      <h2 class="reveal">Want the full picture on one page?</h2>
+      <div class="reveal flex-actions">
+        <a class="btn btn--primary" href="resume.html">Open the CV</a>
+        <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="assets/brand-mark.png" alt="" aria-hidden="true">
+          <span>Ahmad Zaheer</span>
+        </a>
+        <p>Computer &amp; technology specialist in Kabul — web development, databases, and IT &amp; English instruction, in English and Dari.</p>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">Navigate</h2>
+        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="certifications.html">Certificates</a></li><li><a href="contact.html">Contact</a></li><li><a href="resume.html">CV / Résumé</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">Contact</h2>
+        <ul>
+          <li><a href="tel:0773484541"><span class="ltr">0773&nbsp;484&nbsp;541</span></a></li>
+          <li><a href="mailto:ansarwaqef7@gmail.com"><span class="ltr">ansarwaqef7@gmail.com</span></a></li>
+          <li>Khairkhana, Kabul</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">Live websites</h2>
+        <ul><li><a href="https://zaheer-tech.netlify.app" target="_blank" rel="noopener noreferrer"><span class="ltr">zaheer-tech.netlify.app</span></a></li><li><a href="https://online-exam-tech.netlify.app" target="_blank" rel="noopener noreferrer"><span class="ltr">online-exam-tech.netlify.app</span></a></li><li><a href="https://gaming-tech1.netlify.app" target="_blank" rel="noopener noreferrer"><span class="ltr">gaming-tech1.netlify.app</span></a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Ahmad Zaheer. All rights reserved.</p>
+      <div class="footer-bottom-right">
+        <div class="footer-social"></div>
+        <a href="#top" class="to-top" data-to-top>Back to top ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/whatsapp-widget.js"></script>
+<script src="js/ask-ahmad-data.js"></script>
+<script src="js/ask-ahmad.js"></script>
+<script src="js/consent.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# https://ahmadzaheer.dev/robots.txt
+# The address above is a placeholder: run  python3 _extras/set-domain.py https://YOUR-SITE.netlify.app
+# once, and it is updated here, in sitemap.xml, and in every canonical / og:url tag.
+
+User-agent: *
+Allow: /
+
+Disallow: /404.html
+Disallow: /_extras/
+
+Sitemap: https://ahmadzaheer.dev/sitemap.xml

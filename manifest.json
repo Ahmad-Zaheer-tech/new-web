@@ -1,0 +1,30 @@
+{
+  "name": "Ahmad Zaheer — Computer & Technology Specialist",
+  "short_name": "Ahmad Zaheer",
+  "description": "Portfolio and CV of Ahmad Zaheer: web development, database administration, and IT & English education.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0B1210",
+  "theme_color": "#0B1210",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

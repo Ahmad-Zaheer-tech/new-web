@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace https://ahmadzaheer.dev with the real domain once deployed (search build/common.py SITE_URL). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ahmadzaheer.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/about.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/about.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/skills.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/skills.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/skills.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/skills.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/skills.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/skills.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/services.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/services.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/projects.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/projects.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/certifications.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/certifications.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/certifications.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/certifications.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/certifications.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/contact.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/contact.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/resume.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/resume.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/resume.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/resume.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/resume.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/resume.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/projects/zaheer-academy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/projects/zaheer-academy.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/projects/zaheer-academy.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/projects/zaheer-academy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/projects/zaheer-academy.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/projects/zaheer-academy.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/projects/examina.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/projects/examina.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/projects/examina.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/projects/examina.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/projects/examina.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/projects/examina.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/projects/pulsar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/projects/pulsar.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/projects/pulsar.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ahmadzaheer.dev/fa/projects/pulsar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/projects/pulsar.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/projects/pulsar.html"/>
+    <lastmod>2026-09-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>

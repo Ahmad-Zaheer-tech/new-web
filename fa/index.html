@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<script>
+  // Applied before CSS paints, so there's no flash of the wrong theme.
+  (function(){
+    try {
+      var t = localStorage.getItem('az-theme');
+      if(!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      if(t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    } catch(e){}
+  })();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-uvR24iH+WXEbusJgr8aXQsSCjF5JM/0dS/+cfXytYig=' https://www.googletagmanager.com; style-src 'self'; font-src 'self'; img-src 'self' data: https://www.google.com https://maps.gstatic.com; connect-src 'self' https://formspree.io https://www.google-analytics.com https://region1.google-analytics.com; frame-src https://www.google.com; base-uri 'self'; form-action 'self' https://formspree.io;">
+<title>احمد ظهیر — متخصص کمپیوتر و تکنالوژی | وب، پایگاه‌داده، آموزش</title>
+<meta name="description" content="احمد ظهیر، متخصص کمپیوتر و تکنالوژی در کابل: توسعه‌دهندهٔ وب، مدیر پایگاه‌داده و مدرس آی‌تی و انگلیسی. سازندهٔ یک اکادمی رایگان برنامه‌نویسی و یک پلتفورم امتحان آنلاین؛ فعال به دو زبان دری و انگلیسی.">
+<meta name="theme-color" content="#0B1210">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ahmadzaheer.dev/fa/">
+<meta property="og:title" content="احمد ظهیر — متخصص کمپیوتر و تکنالوژی | وب، پایگاه‌داده، آموزش">
+<meta property="og:description" content="احمد ظهیر، متخصص کمپیوتر و تکنالوژی در کابل: توسعه‌دهندهٔ وب، مدیر پایگاه‌داده و مدرس آی‌تی و انگلیسی. سازندهٔ یک اکادمی رایگان برنامه‌نویسی و یک پلتفورم امتحان آنلاین؛ فعال به دو زبان دری و انگلیسی.">
+<meta property="og:image" content="https://ahmadzaheer.dev/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fa_AF">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="احمد ظهیر — متخصص کمپیوتر و تکنالوژی | وب، پایگاه‌داده، آموزش">
+<meta name="twitter:description" content="احمد ظهیر، متخصص کمپیوتر و تکنالوژی در کابل: توسعه‌دهندهٔ وب، مدیر پایگاه‌داده و مدرس آی‌تی و انگلیسی. سازندهٔ یک اکادمی رایگان برنامه‌نویسی و یک پلتفورم امتحان آنلاین؛ فعال به دو زبان دری و انگلیسی.">
+<meta name="twitter:image" content="https://ahmadzaheer.dev/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="../manifest.json">
+<link rel="canonical" href="https://ahmadzaheer.dev/fa/">
+<link rel="alternate" hreflang="en" href="https://ahmadzaheer.dev/">
+<link rel="alternate" hreflang="fa" href="https://ahmadzaheer.dev/fa/">
+<link rel="alternate" hreflang="x-default" href="https://ahmadzaheer.dev/">
+<link rel="preload" href="../assets/fonts/Vazirmatn-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/pages.css">
+<link rel="stylesheet" href="../css/tech-brands.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahmad Zaheer",
+  "alternateName": "احمد ظهیر",
+  "url": "https://ahmadzaheer.dev/",
+  "image": "https://ahmadzaheer.dev/assets/og-image.jpg",
+  "jobTitle": "Computer & Technology Specialist",
+  "description": "Web developer, database manager, and IT & English instructor based in Kabul, Afghanistan.",
+  "email": "mailto:ansarwaqef7@gmail.com",
+  "telephone": "+93773484541",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Khairkhana, near Argentina Hotel",
+    "addressLocality": "Kabul",
+    "addressCountry": "AF"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Afghanistan Institute of Technology (AIT)"
+  },
+  "knowsLanguage": [
+    "fa",
+    "en"
+  ],
+  "knowsAbout": [
+    "Web development",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Tailwind CSS",
+    "PHP",
+    "SQL",
+    "SQL Server",
+    "Oracle Database",
+    "Database administration",
+    "AI-assisted development",
+    "Generative AI",
+    "AI agents and automation",
+    "IT education",
+    "English language teaching"
+  ],
+  "sameAs": [
+    "https://zaheer-tech.netlify.app",
+    "https://online-exam-tech.netlify.app",
+    "https://gaming-tech1.netlify.app"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ahmad Zaheer — Portfolio",
+  "url": "https://ahmadzaheer.dev/",
+  "inLanguage": "fa"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">رفتن به محتوا</a>
+<div class="scroll-progress"></div>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="../assets/brand-mark.png" alt="" aria-hidden="true">
+      <span>احمد ظهیر<small>متخصص کمپیوتر و تکنالوژی</small></span>
+    </a>
+    <nav class="nav-links" aria-label="اصلی"><a href="index.html" aria-current="page">خانه</a><a href="about.html">درباره</a><a href="skills.html">مهارت‌ها</a><a href="services.html">خدمات</a><a href="projects.html">پروژه‌ها</a><a href="certifications.html">گواهینامه‌ها</a><a href="contact.html">تماس</a></nav>
+    <div class="nav-cta">
+      <a class="btn btn--primary btn--small" href="resume.html">مشاهدهٔ رزومه</a>
+      <a class="lang-toggle" href="../index.html" hreflang="en" lang="en" dir="ltr">EN</a>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="تبدیل بین حالت روشن و تاریک" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+      <button type="button" class="nav-toggle" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav-toggle-lines"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav id="mobile-menu" class="mobile-menu" aria-label="موبایل">
+  <ul class="mm-list"><li><a class="mm-link mm-i-index" href="index.html" aria-current="page"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg></span><span class="mm-label">خانه</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-about" href="about.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /> <circle cx="12" cy="7" r="4" /></svg></span><span class="mm-label">درباره</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-skills" href="skills.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" /> <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" /> <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" /></svg></span><span class="mm-label">مهارت‌ها</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-services" href="services.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></svg></span><span class="mm-label">خدمات</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-projects" href="projects.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" /> <path d="M8 10v4" /> <path d="M12 10v2" /> <path d="M16 10v6" /></svg></span><span class="mm-label">پروژه‌ها</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-certifications" href="certifications.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /> <circle cx="12" cy="8" r="6" /></svg></span><span class="mm-label">گواهینامه‌ها</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li><li><a class="mm-link mm-i-contact" href="contact.html"><span class="mm-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></svg></span><span class="mm-label">تماس</span><span class="mm-go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg></span></a></li></ul>
+  <a class="btn btn--primary btn--block mm-cta" href="resume.html"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg>مشاهدهٔ رزومه</a>
+  <div class="mm-quick">
+    <a class="mm-q mm-q--phone" href="tel:0773484541"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg><span>تماس</span></a>
+    <a class="mm-q mm-q--wa" href="https://wa.me/93773484541" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></svg><span>WhatsApp</span></a>
+    <a class="mm-q mm-q--mail" href="mailto:ansarwaqef7@gmail.com"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></svg><span>ایمیل</span></a>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="grid-texture" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-kicker mono">کابل، افغانستان · آمادهٔ همکاری از راه دور</p>
+        <h1>
+          <span class="line"><span>احمد ظهیر</span></span>
+          <span class="line"><span>متخصص کمپیوتر و تکنالوژی</span></span>
+        </h1>
+        <p class="hero-role">توسعه‌دهندهٔ وب، مدیر پایگاه‌داده و مدرس آی‌تی و انگلیسی</p>
+        
+        <div class="typer" id="typer" data-summary="با این‌ها کار می‌کنم: HTML5، CSS3، جاوااسکریپت، Tailwind CSS، PHP، SQL، SQL Server، Oracle Database، MySQL، جاوا، C++، توسعه با هوش مصنوعی، هوش مصنوعی مولد، ایجنت و اتوماسیون، Canva، Affinity، CIT، DIT" data-pause="توقف انیمیشن" data-play="پخش انیمیشن">
+          <div class="typer__head">
+            <p class="typer__label">با این‌ها کار می‌کنم</p>
+            <button class="typer__pause" type="button" aria-pressed="false" aria-label="توقف انیمیشن" hidden><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="3" width="5" height="18" rx="1" /> <rect x="5" y="3" width="5" height="18" rx="1" /></svg><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" /></svg></button>
+          </div>
+          <div class="typer__row" aria-hidden="true">
+            <div class="typer__stage">
+              <span class="typer__slot"></span>
+              <span class="typer__typed"><span class="typer__text"></span><span class="typer__caret"></span></span>
+            </div>
+          </div>
+          <ul class="typer__list"><li class="tc-html5" data-tech="html5"><span class="typer__ico"><img src="../assets/tech/html5.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">HTML5</span></li><li class="tc-css3" data-tech="css3"><span class="typer__ico"><img src="../assets/tech/css3.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">CSS3</span></li><li class="tc-javascript" data-tech="javascript"><span class="typer__ico"><img src="../assets/tech/javascript.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">جاوااسکریپت</span></li><li class="tc-tailwind" data-tech="tailwind"><span class="typer__ico"><img src="../assets/tech/tailwindcss.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">Tailwind CSS</span></li><li class="tc-php" data-plate data-tech="php"><span class="typer__ico"><img src="../assets/tech/php.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">PHP</span></li><li class="tc-sql" data-tech="sql"><span class="typer__ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3" /> <path d="M3 5V19A9 3 0 0 0 21 19V5" /> <path d="M3 12A9 3 0 0 0 21 12" /></svg></span><span class="typer__name">SQL</span></li><li class="tc-sqlserver" data-plate data-tech="sqlserver"><span class="typer__ico"><img src="../assets/tech/microsoftsqlserver.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">SQL Server</span></li><li class="tc-oracle" data-plate data-tech="oracle"><span class="typer__ico"><img src="../assets/tech/oracle.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">Oracle Database</span></li><li class="tc-mysql" data-plate data-tech="mysql"><span class="typer__ico"><img src="../assets/tech/mysql.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">MySQL</span></li><li class="tc-java" data-plate data-tech="java"><span class="typer__ico"><img src="../assets/tech/java.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">جاوا</span></li><li class="tc-cpp" data-plate data-tech="cpp"><span class="typer__ico"><img src="../assets/tech/cplusplus.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">C++</span></li><li class="tc-ai-build" data-tech="ai-build"><span class="typer__ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72" /> <path d="m14 7 3 3" /> <path d="M5 6v4" /> <path d="M19 14v4" /> <path d="M10 2v2" /> <path d="M7 8H3" /> <path d="M21 16h-4" /> <path d="M11 3H9" /></svg></span><span class="typer__name">توسعه با هوش مصنوعی</span></li><li class="tc-gen-ai" data-tech="gen-ai"><span class="typer__ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.296 3.464 3.02 3.956" /> <path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z" /> <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /> <path d="m6.18 5.276 3.1 3.899" /></svg></span><span class="typer__name">هوش مصنوعی مولد</span></li><li class="tc-ai-agents" data-tech="ai-agents"><span class="typer__ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8" /> <rect width="16" height="12" x="4" y="8" rx="2" /> <path d="M2 14h2" /> <path d="M20 14h2" /> <path d="M15 13v2" /> <path d="M9 13v2" /></svg></span><span class="typer__name">ایجنت و اتوماسیون</span></li><li class="tc-canva" data-tech="canva"><span class="typer__ico"><img src="../assets/tech/canva.svg" alt="" width="22" height="22" loading="lazy"></span><span class="typer__name">Canva</span></li><li class="tc-affinity" data-tech="affinity"><span class="typer__ico"><span class="tech-tile__mono" aria-hidden="true">Af</span></span><span class="typer__name">Affinity</span></li><li class="tc-cit" data-tech="cit"><span class="typer__ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2" /> <line x1="8" x2="16" y1="21" y2="21" /> <line x1="12" x2="12" y1="17" y2="21" /></svg></span><span class="typer__name">CIT</span></li><li class="tc-dit" data-tech="dit"><span class="typer__ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" /> <path d="M20.054 15.987H3.946" /></svg></span><span class="typer__name">DIT</span></li></ul>
+        </div>
+        <p class="lede">وب‌سایت و پلتفورم‌های آموزشی می‌سازم، پایگاه‌داده مدیریت می‌کنم و کمپیوتر و انگلیسی تدریس می‌کنم. فارغ‌التحصیل کمپیوتر ساینس از انستیتوت تکنالوژی افغانستان (AIT)، با تجربهٔ عملی در پوهنتون پیام، چندین اکادمی و پروژه‌های فعال خودم — به دو زبان دری و انگلیسی.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="projects.html">مشاهدهٔ پروژه‌ها</a>
+          <a class="btn btn--ghost" href="resume.html">مشاهدهٔ رزومه</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>۶</strong><span>نقش کاری</span></div>
+          <div><strong>۳</strong><span>وب‌سایت فعال</span></div>
+          <div><strong>۴۵۰+</strong><span>درس رایگان منتشرشده</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="chip-frame">
+          <img src="../assets/ahmad-zaheer-640.jpg" alt="عکس احمد ظهیر" width="640" height="640">
+        </div>
+        <div class="chip-pins" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="tech-orbit" aria-hidden="true"><span class="tech-icon tech-icon--1" title="HTML5"><img src="../assets/tech/html5.svg" alt="" width="22" height="22"></span><span class="tech-icon tech-icon--2" title="CSS3"><img src="../assets/tech/css3.svg" alt="" width="22" height="22"></span><span class="tech-icon tech-icon--3" title="جاوااسکریپت"><img src="../assets/tech/javascript.svg" alt="" width="22" height="22"></span><span class="tech-icon tech-icon--4 tech-icon--plate" title="PHP"><img src="../assets/tech/php.svg" alt="" width="22" height="22"></span><span class="tech-icon tech-icon--5 tech-icon--plate" title="SQL Server"><img src="../assets/tech/microsoftsqlserver.svg" alt="" width="22" height="22"></span><span class="tech-icon tech-icon--6" title="Tailwind CSS"><img src="../assets/tech/tailwindcss.svg" alt="" width="22" height="22"></span></div>
+        <div class="hero-badge"><span class="dot"></span> آمادهٔ کار جدید</div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span>پیمایش</span><span class="wire"></span></div>
+  </section>
+
+  <section class="section" id="profile">
+    <div class="wrap profile-grid">
+      <div class="reveal">
+        <h2>جایی که صنف درس، پایگاه‌داده و کد به هم می‌رسند.</h2>
+        <div class="stack mt-2">
+          <p>من احمد ظهیر هستم، فارغ‌التحصیل کمپیوتر ساینس ساکن خیرخانهٔ کابل. کارم بین سه جا در رفت‌وآمد است: پایگاه‌دادهٔ یک پوهنتون، صنف درس، و ویرایشگر کد.</p>
+          <p>سیستم پایگاه‌دادهٔ PHEMIS را در پوهنتون پیام مدیریت کرده‌ام، در چندین اکادمی و مرکز آموزشی انگلیسی و کمپیوتر تدریس کرده‌ام، و پلتفورم‌های خودم را ساخته و منتشر کرده‌ام: یک اکادمی رایگان برنامه‌نویسی و یک سیستم امتحان آنلاین.</p>
+          <p>هوش مصنوعی اکنون بخشی از روش کار من است: از ابزارهای آن برای ساخت اپلیکیشن و وب‌سایت، تولید تصویر و ویدیو، کارهای اسنادی و راه‌اندازی ایجنت‌ها و اتوماسیون استفاده می‌کنم.</p>
+        </div>
+        <p class="mt-2"><a class="link-arrow" href="about.html">خواندن پروفایل کامل<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></p>
+      </div>
+      <aside class="facts reveal" aria-label="اطلاعات کلیدی">
+        <dl>
+          <div><dt>موقعیت</dt><dd>خیرخانه، کابل، افغانستان</dd></div>
+          <div><dt>تحصیلات</dt><dd>دیپلوم کمپیوتر ساینس — AIT (انستیتوت تکنالوژی افغانستان)</dd></div>
+          <div><dt>تمرکز</dt><dd>توسعهٔ وب، پایگاه‌داده، آموزش آی‌تی و انگلیسی، کار با کمک هوش مصنوعی</dd></div>
+          <div><dt>زبان‌ها</dt><dd>دری / فارسی، انگلیسی</dd></div>
+          <div><dt>ساعات کاری</dt><dd>وقت کابل (UTC+4:30)، از راه دور</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--raised" id="expertise">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal">
+        <h2>کارهایی که انجام می‌دهم</h2>
+        <p>چهار حوزه، هرکدام با کار واقعی پشتوانه‌دار — روی آیکن‌ها بروید تا نام تکنالوژی را ببینید، روی آن بزنید تا سایت رسمی‌اش باز شود.</p>
+      </div>
+      <div class="pillar-grid reveal-group">
+      <article class="pillar ac-web reveal">
+        <span class="pillar__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1" /> <rect width="7" height="5" x="14" y="3" rx="1" /> <rect width="7" height="9" x="14" y="12" rx="1" /> <rect width="7" height="5" x="3" y="16" rx="1" /></svg></span>
+        <h3>توسعهٔ وب</h3>
+        <p>وب‌سایت‌ها و اپلیکیشن‌های وب ایستا و پویا با HTML، CSS، جاوااسکریپت، Tailwind CSS و PHP — از جمله یک پلتفورم آموزشی با بیش از ۴۵۰ درس و یک سیستم امتحان آنلاین، هر دو فعال.</p>
+        <div class="mini-icons"><a class="mini-icon tc-html5" href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer" aria-label="HTML5 — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="HTML5"><img src="../assets/tech/html5.svg" alt="" width="20" height="20" loading="lazy"></a><a class="mini-icon tc-css3" href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer" aria-label="CSS3 — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="CSS3"><img src="../assets/tech/css3.svg" alt="" width="20" height="20" loading="lazy"></a><a class="mini-icon tc-javascript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" aria-label="جاوااسکریپت — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="جاوااسکریپت"><img src="../assets/tech/javascript.svg" alt="" width="20" height="20" loading="lazy"></a><a class="mini-icon tc-tailwind" href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" aria-label="Tailwind CSS — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="Tailwind CSS"><img src="../assets/tech/tailwindcss.svg" alt="" width="20" height="20" loading="lazy"></a><a class="mini-icon mini-icon--plate tc-php" href="https://www.php.net" target="_blank" rel="noopener noreferrer" aria-label="PHP — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="PHP"><img src="../assets/tech/php.svg" alt="" width="20" height="20" loading="lazy"></a></div>
+      </article>
+      <article class="pillar ac-data reveal">
+        <span class="pillar__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3" /> <path d="M3 5V19A9 3 0 0 0 21 19V5" /> <path d="M3 12A9 3 0 0 0 21 12" /></svg></span>
+        <h3>پایگاه‌داده</h3>
+        <p>طراحی، کوئری‌نویسی و مدیریت با SQL، SQL Server و Oracle — با پشتوانهٔ یک سال مدیریت پایگاه‌دادهٔ PHEMIS در پوهنتون پیام.</p>
+        <div class="mini-icons"><span class="mini-icon tc-sql" role="img" aria-label="SQL" title="SQL"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3" /> <path d="M3 5V19A9 3 0 0 0 21 19V5" /> <path d="M3 12A9 3 0 0 0 21 12" /></svg></span><a class="mini-icon mini-icon--plate tc-sqlserver" href="https://www.microsoft.com/sql-server" target="_blank" rel="noopener noreferrer" aria-label="SQL Server — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="SQL Server"><img src="../assets/tech/microsoftsqlserver.svg" alt="" width="20" height="20" loading="lazy"></a><a class="mini-icon mini-icon--plate tc-oracle" href="https://www.oracle.com/database/" target="_blank" rel="noopener noreferrer" aria-label="Oracle Database — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="Oracle Database"><img src="../assets/tech/oracle.svg" alt="" width="20" height="20" loading="lazy"></a></div>
+      </article>
+      <article class="pillar ac-teach reveal">
+        <span class="pillar__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg></span>
+        <h3>تدریس و آموزش</h3>
+        <p>تدریس انگلیسی و کمپیوتر در پنج نهاد آموزشی، به‌علاوهٔ یک اکادمی آنلاین رایگان — از مبانی کمپیوتر و ویندوز تا توسعهٔ وب و MySQL.</p>
+        <div class="mini-icons"><a class="mini-icon tc-windows11" href="https://www.microsoft.com/windows/windows-11" target="_blank" rel="noopener noreferrer" aria-label="ویندوز ۱۱ — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="ویندوز ۱۱"><img src="../assets/tech/windows11.svg" alt="" width="20" height="20" loading="lazy"></a><a class="mini-icon mini-icon--plate tc-mysql" href="https://www.mysql.com" target="_blank" rel="noopener noreferrer" aria-label="MySQL — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="MySQL"><img src="../assets/tech/mysql.svg" alt="" width="20" height="20" loading="lazy"></a><a class="mini-icon mini-icon--plate tc-cpp" href="https://isocpp.org" target="_blank" rel="noopener noreferrer" aria-label="C++ — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="C++"><img src="../assets/tech/cplusplus.svg" alt="" width="20" height="20" loading="lazy"></a><a class="mini-icon mini-icon--plate tc-php" href="https://www.php.net" target="_blank" rel="noopener noreferrer" aria-label="PHP — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="PHP"><img src="../assets/tech/php.svg" alt="" width="20" height="20" loading="lazy"></a><a class="mini-icon tc-javascript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" aria-label="جاوااسکریپت — وب‌سایت رسمی (در تب جدید باز می‌شود)" title="جاوااسکریپت"><img src="../assets/tech/javascript.svg" alt="" width="20" height="20" loading="lazy"></a></div>
+      </article>
+      <article class="pillar ac-ai reveal">
+        <span class="pillar__icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /></svg></span>
+        <h3>هوش مصنوعی و اتوماسیون</h3>
+        <p>ابزارهای هوش مصنوعی برای ساخت اپلیکیشن و وب‌سایت، کارهای اداری، و تولید تصویر و ویدیو — به‌علاوهٔ ایجنت‌هایی که کارهای تکراری را خودکار می‌کنند.</p>
+        <div class="mini-icons"><span class="mini-icon tc-ai-tools" role="img" aria-label="ابزارهای هوش مصنوعی" title="ابزارهای هوش مصنوعی"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /></svg></span><span class="mini-icon tc-ai-build" role="img" aria-label="توسعه با کمک هوش مصنوعی" title="توسعه با کمک هوش مصنوعی"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72" /> <path d="m14 7 3 3" /> <path d="M5 6v4" /> <path d="M19 14v4" /> <path d="M10 2v2" /> <path d="M7 8H3" /> <path d="M21 16h-4" /> <path d="M11 3H9" /></svg></span><span class="mini-icon tc-gen-ai" role="img" aria-label="هوش مصنوعی مولد" title="هوش مصنوعی مولد"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.296 3.464 3.02 3.956" /> <path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z" /> <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /> <path d="m6.18 5.276 3.1 3.899" /></svg></span><span class="mini-icon tc-ai-agents" role="img" aria-label="ایجنت‌های هوش مصنوعی و اتوماسیون" title="ایجنت‌های هوش مصنوعی و اتوماسیون"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8V4H8" /> <rect width="16" height="12" x="4" y="8" rx="2" /> <path d="M2 14h2" /> <path d="M20 14h2" /> <path d="M15 13v2" /> <path d="M9 13v2" /></svg></span></div>
+      </article></div>
+    </div>
+  </section>
+
+  <section class="section" id="featured-projects">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal">
+        <h2>پروژه‌های فعال</h2>
+        <p>سه وب‌سایت که ساخته و منتشر کرده‌ام — هرکدام را همین حالا باز کنید.</p>
+      </div>
+      <div class="pf-list">
+    <article class="pf pf--academy pf--compact reveal">
+      <div class="pf__preview" aria-hidden="true">
+        <div class="browser">
+          <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">zaheer-tech.netlify.app</span></div>
+          <div class="browser__body"><b></b><span></span><span></span><span></span>
+            <div class="browser__grid"><i></i><i></i><i></i></div></div>
+        </div>
+      </div>
+      <div class="pf__body">
+        <div class="pf__meta"><span class="project-status" data-status="live"><span class="dot"></span>فعال</span><span class="pf__domain">zaheer-tech.netlify.app</span></div>
+        <h3>آکادمی احمد ظهیر</h3>
+        <p>یک اکادمی آنلاین رایگان برای آموزش برنامه‌نویسی و مهارت‌های کمپیوتری — ۱۱ دوره و بیش از ۴۵۰ درس، هر درس همراه با مثال قابل اجرا و کوییز.</p>
+        
+        
+        <div class="pf__actions"><a class="btn btn--primary" href="https://zaheer-tech.netlify.app" target="_blank" rel="noopener noreferrer">دیدن وب‌سایت<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></a><a class="btn btn--ghost" href="projects/zaheer-academy.html">جزئیات پروژه</a></div>
+      </div>
+    </article>
+    <article class="pf pf--examina pf--compact reveal">
+      <div class="pf__preview" aria-hidden="true">
+        <div class="browser">
+          <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">online-exam-tech.netlify.app</span></div>
+          <div class="browser__body"><b></b><span></span><span></span><span></span>
+            <div class="browser__grid"><i></i><i></i><i></i></div></div>
+        </div>
+      </div>
+      <div class="pf__body">
+        <div class="pf__meta"><span class="project-status" data-status="live"><span class="dot"></span>فعال</span><span class="pf__domain">online-exam-tech.netlify.app</span></div>
+        <h3>Examina</h3>
+        <p>یک پلتفورم امتحان آنلاین با دو حالت: امتحان‌های آنلاین زمان‌دار با نمره‌دهی فوری، و امتحان‌های آمادهٔ چاپ آفلاین همراه با کلید پاسخ.</p>
+        
+        
+        <div class="pf__actions"><a class="btn btn--primary" href="https://online-exam-tech.netlify.app" target="_blank" rel="noopener noreferrer">دیدن وب‌سایت<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></a><a class="btn btn--ghost" href="projects/examina.html">جزئیات پروژه</a></div>
+      </div>
+    </article>
+    <article class="pf pf--gaming pf--compact reveal">
+      <div class="pf__preview" aria-hidden="true">
+        <div class="browser">
+          <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">gaming-tech1.netlify.app</span></div>
+          <div class="browser__body"><b></b><span></span><span></span><span></span>
+            <div class="browser__grid"><i></i><i></i><i></i></div></div>
+        </div>
+      </div>
+      <div class="pf__body">
+        <div class="pf__meta"><span class="project-status" data-status="live"><span class="dot"></span>فعال</span><span class="pf__domain">gaming-tech1.netlify.app</span></div>
+        <h3>پالسار — Gaming Tech</h3>
+        <p>یک فروشگاه آنلاین فارسی و راست‌به‌چپ برای تجهیزات پریمیوم گیمینگ: کامپیوتر، لپ‌تاپ، مانیتور، کیبورد، ماوس و هدست.</p>
+        
+        
+        <div class="pf__actions"><a class="btn btn--primary" href="https://gaming-tech1.netlify.app" target="_blank" rel="noopener noreferrer">دیدن وب‌سایت<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></a><a class="btn btn--ghost" href="projects/pulsar.html">جزئیات پروژه</a></div>
+      </div>
+    </article></div>
+      <div class="center-actions"><a class="btn btn--ghost" href="projects.html">جزئیات همهٔ پروژه‌ها</a></div>
+    </div>
+  </section>
+
+  <section class="section section--raised" id="experience">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal">
+        <h2>مرور تجربهٔ کاری</h2>
+        <p>شش نقش در مدیریت پایگاه‌داده، توسعهٔ مستقل و تدریس.</p>
+      </div>
+      <ul class="xp-compact reveal"><li><strong>مدیر پایگاه‌داده</strong><span>پوهنتون پیام</span><span class="chip">۱ سال</span></li><li><strong>توسعه‌دهندهٔ مستقل وب و پایگاه‌داده</strong><span>مستقل</span><span></span></li><li><strong>معلم انگلیسی و ویرایشگر تصویر</strong><span>ابراج</span><span class="chip">۶ ماه</span></li><li><strong>معلم انگلیسی و کمپیوتر</strong><span>مراکز آموزشی گنجه و آموزش</span><span></span></li><li><strong>استاد انگلیسی</strong><span>اکادمی بدر</span><span></span></li><li><strong>استاد کمپیوتر</strong><span>اکادمی اندیشه نور</span><span></span></li></ul>
+      <p class="mt-2 reveal"><a class="link-arrow" href="about.html#experience">تجربهٔ کامل و جزئیات<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></p>
+    </div>
+  </section>
+
+  <section class="section" id="technologies">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal">
+        <h2>تکنالوژی‌هایی که با آن‌ها کار می‌کنم</h2>
+        <p>هر کاشی رنگ و لوگوی خود آن تکنالوژی را دارد و به وب‌سایت رسمی‌اش لینک می‌شود.</p>
+      </div>
+      <div class="tile-grid tile-grid--compact reveal"><a class="tech-tile tc-html5" href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer" aria-label="HTML5 — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon"><img src="../assets/tech/html5.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">HTML5</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-css3" href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer" aria-label="CSS3 — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon"><img src="../assets/tech/css3.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">CSS3</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-javascript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" aria-label="جاوااسکریپت — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon"><img src="../assets/tech/javascript.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">جاوااسکریپت</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-tailwind" href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer" aria-label="Tailwind CSS — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon"><img src="../assets/tech/tailwindcss.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">Tailwind CSS</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-php" href="https://www.php.net" target="_blank" rel="noopener noreferrer" aria-label="PHP — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon tech-tile__icon--plate"><img src="../assets/tech/php.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">PHP</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-sqlserver" href="https://www.microsoft.com/sql-server" target="_blank" rel="noopener noreferrer" aria-label="SQL Server — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon tech-tile__icon--plate"><img src="../assets/tech/microsoftsqlserver.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">SQL Server</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-oracle" href="https://www.oracle.com/database/" target="_blank" rel="noopener noreferrer" aria-label="Oracle Database — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon tech-tile__icon--plate"><img src="../assets/tech/oracle.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">Oracle Database</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-mysql" href="https://www.mysql.com" target="_blank" rel="noopener noreferrer" aria-label="MySQL — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon tech-tile__icon--plate"><img src="../assets/tech/mysql.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">MySQL</span><span class="tech-tile__note">تدریس‌شده در اکادمی من</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-java" href="https://www.oracle.com/java/" target="_blank" rel="noopener noreferrer" aria-label="جاوا — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon tech-tile__icon--plate"><img src="../assets/tech/java.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">جاوا</span><span class="tech-tile__note">مبانی</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-cpp" href="https://isocpp.org" target="_blank" rel="noopener noreferrer" aria-label="C++ — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon tech-tile__icon--plate"><img src="../assets/tech/cplusplus.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">C++</span><span class="tech-tile__note">مبانی</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-canva" href="https://www.canva.com" target="_blank" rel="noopener noreferrer" aria-label="Canva — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon"><img src="../assets/tech/canva.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">Canva</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a><a class="tech-tile tc-netlify" href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" aria-label="Netlify — وب‌سایت رسمی (در تب جدید باز می‌شود)"><span class="tech-tile__icon"><img src="../assets/tech/netlify.svg" alt="" width="26" height="26" loading="lazy"></span><span class="tech-tile__text"><span class="tech-tile__name">Netlify</span><span class="tech-tile__note">میزبانی وب‌سایت‌های فعال من</span></span><span class="tech-tile__go"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></span></a></div>
+      <p class="mt-2 reveal"><a class="link-arrow" href="skills.html">دیدن همهٔ مهارت‌ها و ابزارها<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></p>
+    </div>
+  </section>
+
+  <section class="section section--raised" id="credentials">
+    <div class="wrap">
+      <div class="section-head section-head--wide reveal">
+        <h2>تحصیلات و گواهینامه‌ها</h2>
+        <p>یک دیپلوم کمپیوتر ساینس از AIT و گواهینامه‌های کمپیوتر و انگلیسی از چندین اکادمی.</p>
+      </div>
+      <div class="cred-strip reveal-group">
+        <article class="cred cred--cs reveal">
+          <span class="cred__mark"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20v2" /> <path d="M12 2v2" /> <path d="M17 20v2" /> <path d="M17 2v2" /> <path d="M2 12h2" /> <path d="M2 17h2" /> <path d="M2 7h2" /> <path d="M20 12h2" /> <path d="M20 17h2" /> <path d="M20 7h2" /> <path d="M7 20v2" /> <path d="M7 2v2" /> <rect x="4" y="4" width="16" height="16" rx="2" /> <rect x="8" y="8" width="8" height="8" rx="1" /></svg></span>
+          <div><h3>دیپلوم و ترانسکریپت کمپیوتر ساینس</h3><span class="cred__org"><bdi>AIT — انستیتوت تکنالوژی افغانستان</bdi></span>
+          <span class="chip">دیپلوم و ترانسکریپت</span></div>
+        </article>
+        <article class="cred cred--en reveal">
+          <span class="cred__mark"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6" /> <path d="m4 14 6-6 2-3" /> <path d="M2 5h12" /> <path d="M7 2h1" /> <path d="m22 22-5-10-5 10" /> <path d="M14 18h6" /></svg></span>
+          <div><h3>دیپلوم و گواهینامهٔ انگلیسی</h3><span class="cred__org"><bdi>TECOL</bdi></span>
+          <span class="chip">دیپلوم و گواهینامه</span></div>
+        </article>
+        <article class="cred cred--gen reveal">
+          <span class="cred__mark"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m16 9-5.5 5.5L8 12" /></svg></span>
+          <div><h3>گواهینامه‌های کمپیوتر و انگلیسی</h3><span class="cred__org"><bdi>اشلی روشان، آموزش، Atarud Alingua</bdi></span>
+          <span class="chip">گواهینامه‌ها</span></div>
+        </article></div>
+      <p class="mt-2 reveal"><a class="link-arrow" href="certifications.html">همهٔ گواهینامه‌ها<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></p>
+    </div>
+  </section>
+
+  <section class="cta-band section--tight">
+    <div class="wrap cta-band-inner">
+      <h2 class="reveal">وب‌سایت، پایگاه‌داده یا برنامهٔ آموزشی در نظر دارید؟</h2>
+      <div class="reveal flex-actions">
+        <a class="btn btn--primary" href="contact.html">در تماس شوید</a>
+        <a class="btn btn--ghost" href="resume.html">مشاهدهٔ رزومه</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="../assets/brand-mark.png" alt="" aria-hidden="true">
+          <span>احمد ظهیر</span>
+        </a>
+        <p>متخصص کمپیوتر و تکنالوژی در کابل — توسعهٔ وب، پایگاه‌داده و آموزش آی‌تی و انگلیسی، به دو زبان دری و انگلیسی.</p>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">صفحات</h2>
+        <ul><li><a href="index.html">خانه</a></li><li><a href="about.html">درباره</a></li><li><a href="skills.html">مهارت‌ها</a></li><li><a href="services.html">خدمات</a></li><li><a href="projects.html">پروژه‌ها</a></li><li><a href="certifications.html">گواهینامه‌ها</a></li><li><a href="contact.html">تماس</a></li><li><a href="resume.html">رزومه (CV)</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">تماس</h2>
+        <ul>
+          <li><a href="tel:0773484541"><span class="ltr">0773&nbsp;484&nbsp;541</span></a></li>
+          <li><a href="mailto:ansarwaqef7@gmail.com"><span class="ltr">ansarwaqef7@gmail.com</span></a></li>
+          <li>خیرخانه، کابل</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-h">وب‌سایت‌های فعال</h2>
+        <ul><li><a href="https://zaheer-tech.netlify.app" target="_blank" rel="noopener noreferrer"><span class="ltr">zaheer-tech.netlify.app</span></a></li><li><a href="https://online-exam-tech.netlify.app" target="_blank" rel="noopener noreferrer"><span class="ltr">online-exam-tech.netlify.app</span></a></li><li><a href="https://gaming-tech1.netlify.app" target="_blank" rel="noopener noreferrer"><span class="ltr">gaming-tech1.netlify.app</span></a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> احمد ظهیر. تمام حقوق محفوظ است.</p>
+      <div class="footer-bottom-right">
+        <div class="footer-social"></div>
+        <a href="#top" class="to-top" data-to-top>بازگشت به بالا ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/config.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/whatsapp-widget.js"></script>
+<script src="../js/ask-ahmad-data.js"></script>
+<script src="../js/ask-ahmad.js"></script>
+<script src="../js/consent.js"></script>
+<script src="../js/typewriter.js"></script>
+</body>
+</html>
